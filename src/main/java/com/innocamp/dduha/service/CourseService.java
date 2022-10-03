@@ -68,6 +68,9 @@ public class CourseService {
             courseDetailSpotRepository.countAllByCourse(course) +
             courseDetailRestRepository.countAllByCourse(course) + 1;
 
+        if (detailOrder > 10) {
+            ResponseDto.fail(EXCEED_MAX_PLACES);
+        }
 
         if(requestDto.getDetailOrder() != 0) {
 

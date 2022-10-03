@@ -7,7 +7,9 @@ import lombok.Getter;
 @Getter
 public class CourseDetailResponseDto {
     private int detailOrder;
+    private Long detailId;
     private String category;
-    private Long id;
     private String name;
+    private Double latitude;
+    private Double longitude;
 }

@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface CourseRepository extends JpaRepository<Course, Long> {
     List<Course> findAllByTrip(Trip trip);
+    void deleteByTripAndDayAfter(Trip trip, int day);
+    List<Course> findAllByTripAndDayAfter(Trip trip, int day);
 }

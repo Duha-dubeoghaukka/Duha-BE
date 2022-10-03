@@ -46,6 +46,7 @@ public enum ErrorCode {
 
     // Course(코스) 관련 오류
     INVALID_CATEGORY("INVALID_CATEGORY", "잘못된 분류 입니다."),
+    EXCEED_MAX_PLACES("EXCEED_MAX_PLACES", "최대 저장 개수를 초과하였습니다."),
 
     //수정, 삭제권한 관련 오류
     NOT_AUTHORIZED("NOT_AUTHORIZED", "권한이 없습니다.");

@@ -24,7 +24,7 @@ public class Accommodation {
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false)
+    @Column
     private String address;
 
     @Column(nullable = false)

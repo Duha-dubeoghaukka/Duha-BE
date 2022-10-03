@@ -26,8 +26,13 @@ public class TripController {
     }
 
     @GetMapping("/auth/trip/{id}")
-    public ResponseDto<?> getTripInfo(@PathVariable Long id,  HttpServletRequest request) {
-        return tripService.getTripInfo(id, request);
+    public ResponseDto<?> getMyTripInfo(@PathVariable Long id,  HttpServletRequest request) {
+        return tripService.getMyTripInfo(id, request);
+    }
+
+    @PutMapping("/auth/trip/{id}")
+    public ResponseDto<?> modifyMyTrip(@PathVariable Long id, @RequestBody TripRequestDto requestDto, HttpServletRequest request) {
+        return tripService.modifyMyTrip(id, requestDto, request);
     }
 
     @DeleteMapping("/auth/trip/{id}")
@@ -38,6 +43,11 @@ public class TripController {
     @GetMapping("/trip")
     public ResponseDto<?> getPublicTrips() {
         return tripService.getPublicTrips();
+    }
+
+    @GetMapping("/trip/{id}")
+    public ResponseDto<?> getPublicTripInfo(@PathVariable Long id) {
+        return tripService.getPublicTripInfo(id);
     }
 
     @PostMapping("/auth/trip/course")

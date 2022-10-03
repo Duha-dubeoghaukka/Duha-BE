@@ -1,6 +1,7 @@
 package com.innocamp.dduha.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.innocamp.dduha.dto.request.TripRequestDto;
 import com.innocamp.dduha.model.course.Course;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Entity
@@ -48,6 +50,13 @@ public class Trip extends Timestamped{
 
     public void doHidden() {
         this.isHidden = true;
+    }
+
+    public void update(TripRequestDto tripRequestDto) {
+        this.title = tripRequestDto.getTitle();
+        this.isPublic = tripRequestDto.getIsPublic();
+        this.startAt = LocalDate.parse(tripRequestDto.getStartAt(), DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+        this.endAt = LocalDate.parse(tripRequestDto.getEndAt(), DateTimeFormatter.ofPattern("yyyy/MM/dd"));
     }
 
 }

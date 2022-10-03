@@ -18,16 +18,16 @@ public class BusStation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(nullable = false)
     private String stationId;
 
-    @Column
+    @Column(nullable = false)
     private String stationName;
 
-    @Column
+    @Column(nullable = false)
     private double latitude;
 
-    @Column
+    @Column(nullable = false)
     private double longitude;
 
     @Column

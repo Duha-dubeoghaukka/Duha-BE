@@ -11,5 +11,4 @@ public class CourseResponseDto {
     private Long courseId;
     private int day;
     private List<CourseDetailResponseDto> courseDetails;
-    private CourseAccommodationResponseDto accommodation;
 }
