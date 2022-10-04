@@ -53,6 +53,12 @@ public class MemberController {
         return memberService.logout(request);
     }
 
+    // 회원 정보 수정
+    @PutMapping("/auth/member/modify")
+    public ResponseDto<?> modifyMember(@RequestBody MemberRequestDto requestDto, HttpServletRequest request) {
+        return memberService.modifyMember(requestDto, request);
+    }
+
     // 카카오 로그인
     @GetMapping("/oauth/kakao")
     public ResponseDto<?> kakaoLogin(@RequestParam(name = "code") String code, HttpServletResponse response)

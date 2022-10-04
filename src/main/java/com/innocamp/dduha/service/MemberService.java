@@ -1,9 +1,9 @@
 package com.innocamp.dduha.service;
 
+import com.innocamp.dduha.dto.ResponseDto;
 import com.innocamp.dduha.dto.request.LoginRequestDto;
 import com.innocamp.dduha.dto.request.MemberRequestDto;
 import com.innocamp.dduha.jwt.TokenDto;
-import com.innocamp.dduha.dto.ResponseDto;
 import com.innocamp.dduha.jwt.TokenProvider;
 import com.innocamp.dduha.model.Authority;
 import com.innocamp.dduha.model.Member;
@@ -13,6 +13,7 @@ import com.innocamp.dduha.repository.RefreshTokenRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -117,6 +118,21 @@ public class MemberService {
         refreshTokenRepository.delete(refreshToken);
         return ResponseDto.success(NULL);
 
+    }
+
+    // 회원 정보 수정
+    @Transactional
+    public ResponseDto<?> modifyMember(@RequestBody MemberRequestDto requestDto, HttpServletRequest request) {
+        if (null == request.getHeader("Authorization")) {
+            return ResponseDto.fail(MEMBER_NOT_FOUND);
+        }
+        Member member = validateMember(request);
+        if (null == member) {
+            return ResponseDto.fail(INVALID_TOKEN);
+        }
+
+        member.modify(requestDto,passwordEncoder);
+        return ResponseDto.success(member);
     }
 
     @Transactional
