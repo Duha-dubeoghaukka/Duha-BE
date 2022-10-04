@@ -132,6 +132,7 @@ public class MemberService {
         }
 
         member.modify(requestDto,passwordEncoder);
+        memberRepository.save(member);
         return ResponseDto.success(member);
     }
 
