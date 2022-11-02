@@ -9,10 +9,15 @@
 <b>뚜-하!👋🏻</b> [뚜벅하우까]는 제주도 뚜벅이 여행자들을 위해 <br>편리한 여행을 계획하고 즐길 수 있는 서비스입니다. <br> 제주도 뚜벅이 여행자들에게 최적화된 맞춤형 서비스를 제공하고 있어요!
 
 <br>
-
+  
+![배너](https://user-images.githubusercontent.com/110074637/199524229-13ecc4d9-c87d-4fc7-a489-e0bd1d3e2384.jpg)
+  
+### 💻 [발표영상(보러가기)](https://youtu.be/JZyz5YR31hg) 💻
+  
+<br>
+  
 ## 📌 주요 기능 📌
 
-**[뚜벅하우까]를 사용하시면 아래의 서비스를 경험해보실 수 있어요!**
 
 ```
 - 상세한 제주도 관광, 맛집, 숙소 정보 확인
@@ -38,22 +43,35 @@
 
 ## ⚙️ 기술 스택 ⚙️
 
+  ![tech](https://user-images.githubusercontent.com/110074637/199521085-5d85bd37-29f5-4c69-ac50-d34f7a5078e7.jpg)
+
 ### 🛠 BackEnd 🛠
 
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/SpringBoot-green?style=flat-square&logo=SpringBoot&logoColor=white"/>
-<img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/AppacheTomcat-yellow?style=flat-square&logo=AppacheTomcat&logoColor=white"/>
-<img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/JWT-purple?style=flat-square&logo=jwt&logoColor=white"/>
+<img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/JWT-purple?style=flat-square&logo=JWT&logoColor=white"/>
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/Lombok-red?style=flat-square&logo=lombok&logoColor=white"/>
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/Jsoup-blue?style=flat-square&logo=jsoup&logoColor=white"/>
-<img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/GSON-deepgreen?style=flat-square&logo=gson&logoColor=white"/>
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/OAuth2-gray?style=flat-square&logo=OAuth2&logoColor=white"/>
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/JPA-green?style=flat-square&logo=JPA&logoColor=white"/>
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/MySql-navy?style=flat-square&logo=MySql&logoColor=white"/>
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/AMAZON RDS-navy?style=flat-square&logo=Amazon rds&logoColor=white"/>
+<img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/AMAZON EC2-red?style=flat-square&logo=Amazon ec2&logoColor=white"/>
 <img style="margin:5px; border: 2px solid white; border-radius: 20px" src="https://img.shields.io/badge/AWS-232f3e?style=flat-square&logo=amazon&logoColor=white"/>
 
-</div>
 
+
+<br>
+<br>
+
+## 🖍️ E R D 🖍️
+
+![erd](https://user-images.githubusercontent.com/110074637/199521884-ba8cc18b-93fc-4041-b558-9cff931f1013.jpg)
+
+<br>
+
+## 📑 [API 명세서 (바로가기)](https://fascinated-log-07d.notion.site/fe4a9b4c72eb420db94ef424c90f33f7?v=e9831c0f38974ffca2c7b5736151ae61) 📑
+  
+</div>
 <br>
 
 ## 👟 시작하기 👟
