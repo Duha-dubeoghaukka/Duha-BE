@@ -69,7 +69,7 @@
 
 <br>
 
-## 📑 [API 명세서 (바로가기)](https://fascinated-log-07d.notion.site/fe4a9b4c72eb420db94ef424c90f33f7?v=e9831c0f38974ffca2c7b5736151ae61) 📑
+## 📑 [API 명세서 (바로가기)](https://amplified-beat-5bf.notion.site/fe4a9b4c72eb420db94ef424c90f33f7?v=e9831c0f38974ffca2c7b5736151ae61) 📑
   
 </div>
 <br>
