@@ -62,7 +62,7 @@ jobs:
     - name: Zip build file and deploy sh
       run: |
         mv ./build/libs/*.jar ./
-        zip buildFile.zip ./appspec.yml ./*.jar
+                zip buildFile.zip .scripts/health_check.sh .scripts/run_new_was.sh .scripts/switch.sh ./appspec.yml ./*.jar
 
 
     # (4) AWS 인증 (IAM 사용자 Access Key, Secret Key 활용)
